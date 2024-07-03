@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(135deg ,rgb(91, 108, 202) ,rgb(201, 84, 103));
+    padding: 20px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    /* margin: 100px auto 20px;makes left-right auto */
+    margin: 100px auto ;/*its the same just takes 100px from bottom too*/
+    padding: 10px 10px 50px;
+    border-radius: 10px;
+}
+.todo-app h2{
+  display: flex;
+  max-width: 300px;
+ gap: 10px;
+
+}
+.todo-app h2 img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background: #edeef0;
+    border-radius: 20px;
+}
+#input-box{
+    border: 0px none;
+    outline: none;
+    padding: 20px;
+    width: 70vw;
+    padding-left: 10px;
+    font-size: 1.1em;
+   background:transparent;
+}
+.row button{
+     padding: 20px 30px;/* first for top-bottom,2nd for left-right */
+    border: none;
+    outline: none;
+    background: #ff5945;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+   
+}
+ul {
+    list-style: lower-alpha;
+    margin-left: 20px;
+}
+
+ul li {
+    /* list-style: lower-alpha; */
+    padding: 10px 10px 10px 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    position: relative;
+}
+li div{
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 50%; 
+    margin-left: 10px;
+    position: absolute;
+    top: 22%;
+}
+li::before{
+    content: ' ';
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 50%; 
+    margin-right: 5px;
+}
+ul li.checked {
+    text-decoration: line-through;
+    background-color: rgb(122, 118, 118);
+}
+li span{
+     position: absolute;
+    right: 0%; 
+    top: 0%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.7em;
+}
+ul li span:hover {
+    background-color: rgba(97, 94, 94, 0.6);
+    font-size: 1em;
+}
+li div.checked{
+    background-color: rgb(20, 19, 19);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 50%; 
+    margin-left: 10px;
+    
+}

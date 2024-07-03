@@ -1,0 +1,22 @@
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg,red,pink);
+
+}
+.search{
+    height: 30vh;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px;
+}
+select{
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: beige;
+    font-size: 1.1em;
+    color: blue;
+    text-transform: uppercase;
+}
